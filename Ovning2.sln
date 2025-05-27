@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovning2", "Ovning2\Ovning2.csproj", "{25D0A36F-19AC-4EDA-8092-EA22F1278C09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pio.Helpers", "Pio.Helpers\Pio.Helpers.csproj", "{3813DADD-9ADA-44AB-AF12-C3DE7191C00F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovning2.Abstractions", "Ovning2.Abstractions\Ovning2.Abstractions.csproj", "{B360D91D-6F72-473E-A0DC-D2413212CAB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Helpers", "UI.Helpers\UI.Helpers.csproj", "{335F557D-331C-461C-BE2D-26821BE21626}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25D0A36F-19AC-4EDA-8092-EA22F1278C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25D0A36F-19AC-4EDA-8092-EA22F1278C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25D0A36F-19AC-4EDA-8092-EA22F1278C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25D0A36F-19AC-4EDA-8092-EA22F1278C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3813DADD-9ADA-44AB-AF12-C3DE7191C00F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3813DADD-9ADA-44AB-AF12-C3DE7191C00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3813DADD-9ADA-44AB-AF12-C3DE7191C00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3813DADD-9ADA-44AB-AF12-C3DE7191C00F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B360D91D-6F72-473E-A0DC-D2413212CAB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B360D91D-6F72-473E-A0DC-D2413212CAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B360D91D-6F72-473E-A0DC-D2413212CAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B360D91D-6F72-473E-A0DC-D2413212CAB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335F557D-331C-461C-BE2D-26821BE21626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335F557D-331C-461C-BE2D-26821BE21626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335F557D-331C-461C-BE2D-26821BE21626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335F557D-331C-461C-BE2D-26821BE21626}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F660564-6FC4-46E8-858B-EE575F0FEC1A}
+	EndGlobalSection
+EndGlobal
