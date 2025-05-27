@@ -90,21 +90,6 @@ internal class Main
     }
 
 
-    //private void GroupTickets()
-    //{
-    //    List<uint> ages = [];
-    //    uint num = Util.AskForUint("Enter number of customers: ", _ui);
-    //    for (int i = 1; i <= num; i++)
-    //    {
-    //        uint age = Util.AskForUint($"Enter customer {i} age: ", _ui);
-    //        ages.Add(age);
-    //    }
-    //    _ui.Print($"Total cost: {_pio.GroupPrice(ages)}kr");
-    //}
-
-
-
-
     private void RepeatTenTimes() {
         string input = Util.AskForString("Enter an input to repeat it 10 times", _ui);
         _ui.Print(Repeater.Repeat(input, 10));
@@ -126,51 +111,3 @@ internal class Main
 }
 
 
-
-
-
-
-
-
-
-
-
-//        if (Splitter.SplitText("test  testtest", ' ', out string[] x))
-//        {
-//            for (int i = 0; i<x.Length; i++)
-//            {
-//                if (x[i] == " ") continue;
-//                _ui.Print($"{i}: {x[i]}");
-//            }
-//        }
-//        else
-//{
-//    Console.WriteLine("Error");
-//}
-
-
-
-
-
-
-
-
-//private void ShowPioMeny() {
-//    _ui.Print($"{MenyHelpers.PioSingle}. Single Ticket");
-//    _ui.Print($"{MenyHelpers.PioGroup}. PioGroup");
-
-//    do {
-//        string input = _ui.GetInput();
-//        switch (input) {
-//            case MenyHelpers.PioSingle:
-//                SingleTicket();
-//                break;
-//            case MenyHelpers.PioGroup:
-//                GroupTickets();
-//                break;
-//            default:
-//                break;
-//            }
-//        if (input != MenyHelpers.PioSingle || input != MenyHelpers.PioGroup) break;
-//    } while (true);
-//}
