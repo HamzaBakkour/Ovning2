@@ -6,10 +6,21 @@ using System.Threading.Tasks;
 using Ovning2.Abstractions;
 
 namespace Ovning2;
-internal class Splitter
+
+
+
+internal interface ISplitter
+{
+    bool SplitText(string txt, char letter, out string[] result);
+}
+
+
+
+
+internal class Splitter: ISplitter
 {
     private const int _minWordNumber = 3;
-    public static bool SplitText(string txt, char letter, out string[] result) {
+    public bool SplitText(string txt, char letter, out string[] result) {
         string[] inputtxt = txt.Split(letter);
 
         //Handle the multiple char letter incounter.

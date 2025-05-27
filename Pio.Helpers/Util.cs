@@ -27,7 +27,7 @@ public static class Util
     }
 
 
-    public static bool ValidateAge(string age) => int.Parse(age) >= 1;
+    public static bool ValidateAge(string age) => int.TryParse(age, out int x) && x >= 1;
 
 
     public static string AskForString(string prompt, IUI ui)

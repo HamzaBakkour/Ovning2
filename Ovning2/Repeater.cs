@@ -4,19 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ovning2
+namespace Ovning2;
+
+internal interface IRepeater
 {
-    internal class Repeater
-    {
-        public static string Repeat(string txt, int numRepeat) {
+     string Repeat(string txt, int numRepeat);
+}
 
-            string result = string.Empty;
-            for (int i = 1; i <= numRepeat; i++)
-            {
-                result += i == numRepeat ? $"output{i}: {txt}" : $"output{i}: {txt}, ";
-            }
-            return result;
+internal class Repeater: IRepeater
+{
+    public string Repeat(string txt, int numRepeat) {
+
+        string result = string.Empty;
+        for (int i = 1; i <= numRepeat; i++)
+        {
+            result += i == numRepeat ? $"output{i}: {txt}" : $"output{i}: {txt}, ";
         }
-
+        return result;
     }
+
 }

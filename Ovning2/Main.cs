@@ -14,10 +14,15 @@ internal class Main
 {
     private IUI _ui;
     private IPio _pio;
+    private IRepeater _repeater;
+    private ISplitter _splitter;
 
-    public Main(IUI ui, IPio pio) {
+
+    public Main(IUI ui, IPio pio, IRepeater repeater, ISplitter splitter) {
         this._ui = ui;
         this._pio = pio;
+        this._repeater = repeater;
+        this._splitter = splitter;
     }
 
     public void Run() {
@@ -62,11 +67,14 @@ internal class Main
     }
 
     private void SingleTicket() {
-        string age = Util.AskForString("Age: ", _ui);
-        if (!IsValidAge(age)) return;
+
+        string age = string.Empty;
+        do{
+            age  = Util.AskForString("Age: ", _ui);
+        } while (!IsValidAge(age));
+
         _ui.Print(_pio.SinglePrice(age));
     }
-
 
 
     private bool IsValidAge(string age) {
@@ -92,7 +100,7 @@ internal class Main
 
     private void RepeatTenTimes() {
         string input = Util.AskForString("Enter an input to repeat it 10 times", _ui);
-        _ui.Print(Repeater.Repeat(input, 10));
+        _ui.Print(_repeater.Repeat(input, 10));
     }
 
     private void SplitText() {
@@ -100,7 +108,7 @@ internal class Main
         {
             string input = Util.AskForString("Enter a string of at least" +
             " three words to get back the third word: ", _ui);
-            if (Splitter.SplitText(input, ' ', out string[] result)){
+            if (_splitter.SplitText(input, ' ', out string[] result)){
                 _ui.Print($"The third word is {result[2]}");
                 break;
             }
